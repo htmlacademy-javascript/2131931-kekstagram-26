@@ -11,8 +11,6 @@ getRandomInt(10, 100);
 
 // Проверка максимальной длины комментария.
 function checkImgComment (imgComment, maxLengthImgComment) {
-  if (imgComment.length <= maxLengthImgComment) {
-    return true;
-  } return false;
+  return imgComment.length <= maxLengthImgComment;
 }
 checkImgComment('Проверяемая строка', 140);
